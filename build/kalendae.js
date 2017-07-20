@@ -657,7 +657,7 @@ Kalendae.prototype = {
 		} while (++i < c);
 
 		if (opts.directionScrolling) {
-			var diffComparison = moment().startOf('day').hours(12);
+			var diffComparison = moment().startOf('month').hours(12);
 			diff = month.diff(diffComparison, 'months', true);
 
 			if (opts.direction === 'today-past' || opts.direction === 'past') {
