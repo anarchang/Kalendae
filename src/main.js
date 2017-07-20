@@ -642,7 +642,7 @@ Kalendae.prototype = {
 			diff = month.diff(diffComparison, 'months', true);
 
 			if (opts.direction === 'today-past' || opts.direction === 'past') {
-				if (diff < 0) {
+				if (diff <= 0) {
 					this.disableNextMonth = false;
 					util.removeClassName(this.container, classes.disableNextMonth);
 				} else {
